@@ -1,0 +1,9 @@
+<apex:page standardController="account">
+    <apex:pageBlock title="basic details">
+        you are viewing the account {!account.name}
+        <p> and his billing address is <b> {!account.type}</b></p>
+    </apex:pageBlock> 
+    <p> you are viewing the account {!account.name} </p>
+    
+    
+</apex:page>

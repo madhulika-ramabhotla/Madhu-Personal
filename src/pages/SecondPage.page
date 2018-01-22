@@ -1,0 +1,15 @@
+<apex:page standardController="Contact">
+	<apex:form >
+		<apex:pageBlock title="{!contact.name}" >
+		<apex:pageBlockSection title="edit:{!contact.name}" columns="1">
+			
+			 <apex:inputField value="{!contact.phone}" taborderhint="3"/> 
+			<apex:inputField value="{!contact.mobilephone}" label="Mobile#" taborderhint="1"/>
+			<apex:inputField value="{!contact.email}" label="{!contact.firstname + ' email'}" taborderhint="2"/>
+			<apex:inputField value="{!contact.leadsource}" label="Lead source #" taborderhint="4"/>
+		</apex:pageBlockSection>
+			<apex:commandButton action="{!save}" value="save new account name" />
+        
+		</apex:pageBlock>
+	</apex:form>	
+</apex:page>

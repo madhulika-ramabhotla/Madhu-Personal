@@ -1,0 +1,14 @@
+<apex:page STANDARDController="Account">
+  
+  <apex:pageBlock title="Account details">
+  	<p> created by {!account.CreatedBy}</p>
+  	<p>hello {!$User.FirstName}</p>
+  	<p>account first name <b>{!Account.name} </b></p>
+  	<p>account phone {!account.phone}</p> 
+  </apex:pageBlock>
+  <apex:pageBlock title="say">
+  	<p>new block</p>
+  </apex:pageBlock>
+  <apex:detail subject="{!account.ownerid}" relatedList="false" title="false"/>
+
+</apex:page>
